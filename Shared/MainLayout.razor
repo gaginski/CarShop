@@ -1,0 +1,36 @@
+@using CarShop.Services
+@inherits LayoutComponentBase
+@inject SessionService Session
+@inject NavigationManager Nav
+
+<div class="layout">
+    <div class="sidebar">
+        <div class="brand">
+            CarShop
+        </div>
+        <NavMenu />
+        @if (Session.IsLoggedIn)
+        {
+            <div class="user-box">
+                <div>@Session.CurrentUser!.Username</div>
+                <button class="btn btn-sm btn-outline-light mt-1" @onclick="Logout">Sair</button>
+            </div>
+        }
+    </div>
+    <div class="content-area">
+        <div class="topbar">
+            <span>Gestão de veículos e vendas</span>
+        </div>
+        <div class="content">
+            @Body
+        </div>
+    </div>
+</div>
+
+@code {
+    private void Logout()
+    {
+        Session.SignOut();
+        Nav.NavigateTo("login", true);
+    }
+}

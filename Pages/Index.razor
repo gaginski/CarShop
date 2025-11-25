@@ -1,0 +1,37 @@
+@page "/"
+@inject SessionService Session
+
+@if (!Session.IsLoggedIn)
+{
+    <div class="card">
+        <div class="card-body">
+            <h3>Bem-vindo ao CarShop</h3>
+            <p>Faça login para acessar o sistema.</p>
+            <a class="btn btn-primary" href="login">Entrar</a>
+        </div>
+    </div>
+}
+else
+{
+    <h3>CarShop</h3>
+    <p>Usuário: @Session.CurrentUser!.Username</p>
+
+    <div class="cards-grid">
+        <a class="card-link" href="cars">
+            <div class="card">
+                <div class="card-body">
+                    <h4>Carros</h4>
+                    <p>Cadastre e gerencie os veículos disponíveis para venda.</p>
+                </div>
+            </div>
+        </a>
+        <a class="card-link" href="orders">
+            <div class="card">
+                <div class="card-body">
+                    <h4>Pedidos</h4>
+                    <p>Consulte as vendas realizadas.</p>
+                </div>
+            </div>
+        </a>
+    </div>
+}

@@ -1,0 +1,11 @@
+@using CarShop.Services
+@inject SessionService Session
+
+<nav class="nav-menu">
+    <a href="" class="nav-link">Início</a>
+    @if (Session.IsLoggedIn)
+    {
+        <a href="cars" class="nav-link">Carros</a>
+        <a href="orders" class="nav-link">Pedidos</a>
+    }
+</nav>

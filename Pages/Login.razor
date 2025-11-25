@@ -1,0 +1,64 @@
+@page "/login"
+@using Microsoft.EntityFrameworkCore
+@inject CarShop.Data.ApplicationDbContext Db
+@inject CarShop.Services.SessionService Session
+@inject NavigationManager Nav
+
+<h3>Login</h3>
+
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger">@errorMessage</div>
+}
+
+<EditForm Model="model" OnValidSubmit="DoLogin">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="mb-3">
+        <label class="form-label">Usuário</label>
+        <InputText class="form-control" @bind-Value="model.Username" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Senha</label>
+        <InputText class="form-control" type="password" @bind-Value="model.Password" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Entrar</button>
+</EditForm>
+
+@code {
+    private LoginModel model = new LoginModel();
+    private string? errorMessage;
+
+    private async Task DoLogin()
+    {
+        try
+        {
+            errorMessage = null;
+
+            var user = await Db.Users
+                .FirstOrDefaultAsync(u => u.Username == model.Username && u.Password == model.Password);
+
+            if (user == null)
+            {
+                errorMessage = "Usuário ou senha inválidos.";
+                return;
+            }
+
+            Session.SignIn(user);
+            Nav.NavigateTo("/", false);
+        }
+        catch (Exception ex)
+        {
+            errorMessage = "Erro ao tentar fazer login: " + ex.Message;
+        }
+    }
+
+    public class LoginModel
+    {
+        public string Username { get; set; } = string.Empty;
+        public string Password { get; set; } = string.Empty;
+    }
+}

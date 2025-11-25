@@ -1,0 +1,88 @@
+@page "/orders/new/{CarId:long}"
+@inject ApplicationDbContext Db
+@inject SalesService Sales
+@inject SessionService Session
+
+<h3>Nova venda</h3>
+
+@if (!Session.IsLoggedIn || !Session.IsVendor)
+{
+    <p>Somente vendedores autenticados podem registrar vendas.</p>
+}
+else if (car == null)
+{
+    <p>Carro não encontrado.</p>
+}
+else
+{
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5>@car.Brand @car.Model (@car.Year)</h5>
+            <p>Cor: @car.Color</p>
+            <p>Km: @car.Km</p>
+            <p>Preço: @car.Price.ToString("N2")</p>
+        </div>
+    </div>
+
+    <EditForm Model="model" OnValidSubmit="SaveOrder">
+        <div class="mb-2">
+            <label class="form-label">Nome do cliente</label>
+            <InputText class="form-control" @bind-Value="model.CustomerName" />
+        </div>
+
+        <div class="mb-2">
+            <label class="form-label">Desconto</label>
+            <InputNumber class="form-control" @bind-Value="model.Discount" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Total</label>
+            <input class="form-control" value="@FinalPrice.ToString("N2")" disabled />
+        </div>
+
+        <button type="submit" class="btn btn-success">Confirmar venda</button>
+    </EditForm>
+
+    @if (orderCreated)
+    {
+        <div class="alert alert-success mt-3">
+            Venda registrada. Pedido: @createdOrderId
+        </div>
+    }
+}
+
+@code {
+    [Parameter] public long CarId { get; set; }
+
+    private Car? car;
+    private NewOrderModel model = new NewOrderModel();
+    private bool orderCreated;
+    private long createdOrderId;
+
+    private decimal FinalPrice => car == null ? 0 : (decimal)car.Price - model.Discount;
+
+    protected override async Task OnInitializedAsync()
+    {
+        car = await Db.Cars.FirstOrDefaultAsync(c => c.Id == CarId);
+    }
+
+    private async Task SaveOrder()
+    {
+        if (car == null)
+        {
+            return;
+        }
+
+        var vendorId = Session.CurrentUser!.Id;
+        var order = await Sales.CreateOrderAsync(car.Id, model.CustomerName, model.Discount, vendorId);
+        orderCreated = true;
+        createdOrderId = order.Order.Id;
+        StateHasChanged();
+    }
+
+    public class NewOrderModel
+    {
+        public string CustomerName { get; set; } = string.Empty;
+        public decimal Discount { get; set; }
+    }
+}
