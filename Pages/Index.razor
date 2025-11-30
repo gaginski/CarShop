@@ -1,37 +1,108 @@
 @page "/"
+@using Microsoft.AspNetCore.Components.Authorization
+@inherits LayoutComponentBase
 @inject SessionService Session
+@inject NavigationManager Nav
+@inject AuthenticationStateProvider AuthState
+@inject Microsoft.JSInterop.IJSRuntime JS
+@inject IHttpContextAccessor HttpContextAccessor
 
-@if (!Session.IsLoggedIn)
-{
-    <div class="card">
-        <div class="card-body">
-            <h3>Bem-vindo ao CarShop</h3>
-            <p>Faça login para acessar o sistema.</p>
-            <a class="btn btn-primary" href="login">Entrar</a>
+@inject AuthenticationStateProvider AuthStateProvider
+
+<PageTitle>Início</PageTitle>
+
+<AuthorizeView>
+    <Authorized Context="auth">
+
+        <button class="btn btn-outline-danger btn-sm"
+                @onclick="() => DoLogout()">
+            Logout
+        </button>
+        <div class="card mt-3">
+            <div class="card-body">
+                <h3>CarShop</h3>
+                <p>Usuário: @auth.User.Identity?.Name</p>
+
+                <div class="cards-grid mt-3">
+                    <a class="card-link" href="cars">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Carros</h4>
+                                <p>Cadastre e gerencie os veículos disponíveis para venda.</p>
+                            </div>
+                        </div>
+                    </a>
+                     @if (isAdmin)
+                    {
+                        <a class="card-link" href="orders">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4>Pedidos</h4>
+                                    <p>Consulte as vendas realizadas.</p>
+                                </div>
+                            </div>
+                        </a>
+
+
+                        <a class="card-link" href="Users">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4>Usuários</h4>
+                                    <p>Gerencie vendedores e Administradores</p>
+                                </div>
+                            </div>
+                        </a>
+
+					}
+                </div>
+            </div>
         </div>
-    </div>
-}
-else
-{
-    <h3>CarShop</h3>
-    <p>Usuário: @Session.CurrentUser!.Username</p>
 
-    <div class="cards-grid">
-        <a class="card-link" href="cars">
-            <div class="card">
-                <div class="card-body">
-                    <h4>Carros</h4>
-                    <p>Cadastre e gerencie os veículos disponíveis para venda.</p>
-                </div>
+
+    </Authorized>
+
+    <NotAuthorized>
+        <div class="card mt-3">
+            <div class="card-body">
+                <h3>Bem-vindo ao CarShop</h3>
+                <p>Faça login para acessar o sistema.</p>
+                <a class="btn btn-primary" href="login">Entrar</a>
             </div>
-        </a>
-        <a class="card-link" href="orders">
-            <div class="card">
-                <div class="card-body">
-                    <h4>Pedidos</h4>
-                    <p>Consulte as vendas realizadas.</p>
-                </div>
-            </div>
-        </a>
-    </div>
+        </div>
+    </NotAuthorized>
+</AuthorizeView>
+
+
+@code {
+    private bool isAuthenticated = false;
+    private bool isAdmin = false;
+    private string username = "";
+
+    public async Task DoLogout()
+    {
+        await JS.InvokeVoidAsync("carShopLogout");
+
+        if (AuthState is JwtAuthenticationStateProvider jwtProvider)
+        {
+            jwtProvider.NotifyUserLogout();
+        }
+
+        Nav.NavigateTo("/login", forceLoad: true);
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        isAuthenticated = user.Identity?.IsAuthenticated ?? false;
+
+        if (isAuthenticated)
+        {
+            username = user.Identity?.Name ?? "";
+
+            isAdmin = user.IsInRole("Admin");
+        }
+    }
+
 }

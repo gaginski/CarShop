@@ -1,8 +1,7 @@
 @page "/login"
-@using Microsoft.EntityFrameworkCore
-@inject CarShop.Data.ApplicationDbContext Db
-@inject CarShop.Services.SessionService Session
+@using System.ComponentModel.DataAnnotations
 @inject NavigationManager Nav
+@inject IJSRuntime JS
 
 <h3>Login</h3>
 
@@ -29,7 +28,7 @@
 </EditForm>
 
 @code {
-    private LoginModel model = new LoginModel();
+    private LoginModel model = new();
     private string? errorMessage;
 
     private async Task DoLogin()
@@ -38,17 +37,20 @@
         {
             errorMessage = null;
 
-            var user = await Db.Users
-                .FirstOrDefaultAsync(u => u.Username == model.Username && u.Password == model.Password);
+            var statusCode = await JS.InvokeAsync<int>("carShopLogin.login", model);
 
-            if (user == null)
+            if (statusCode == 200)
+            {
+                Nav.NavigateTo("/", forceLoad: true);
+            }
+            else if (statusCode == 401)
             {
                 errorMessage = "Usuário ou senha inválidos.";
-                return;
             }
-
-            Session.SignIn(user);
-            Nav.NavigateTo("/", false);
+            else
+            {
+                errorMessage = $"Erro ao tentar fazer login. Código: {statusCode}.";
+            }
         }
         catch (Exception ex)
         {
@@ -58,7 +60,10 @@
 
     public class LoginModel
     {
+        [Required(ErrorMessage = "Informe o usuário.")]
         public string Username { get; set; } = string.Empty;
+
+        [Required(ErrorMessage = "Informe a senha.")]
         public string Password { get; set; } = string.Empty;
     }
 }

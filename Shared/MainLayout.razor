@@ -1,7 +1,13 @@
 @using CarShop.Services
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.JSInterop
 @inherits LayoutComponentBase
 @inject SessionService Session
 @inject NavigationManager Nav
+@inject AuthenticationStateProvider AuthState
+@inject Microsoft.JSInterop.IJSRuntime JS
+@inject IHttpContextAccessor HttpContextAccessor
+
 
 <div class="layout">
     <div class="sidebar">
@@ -25,12 +31,7 @@
             @Body
         </div>
     </div>
-</div>
+ </div>
 
-@code {
-    private void Logout()
-    {
-        Session.SignOut();
-        Nav.NavigateTo("login", true);
-    }
-}
+
+

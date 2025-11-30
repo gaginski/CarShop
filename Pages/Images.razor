@@ -1,0 +1,202 @@
+﻿@page "/cars/{CarId:long}"
+
+@using CarShop.Data
+@using CarShop.Models
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.EntityFrameworkCore
+
+@attribute [Authorize(Roles = "Admin")]
+
+@inject ApplicationDbContext Db
+@inject NavigationManager Nav
+
+<h3 class="mb-3">Imagens do veículo</h3>
+
+@if (car is null)
+{
+    <div class="alert alert-warning">
+        Veículo não encontrado.
+    </div>
+}
+else
+{
+    <div class="mb-3">
+        <strong>@car.Brand @car.Model</strong> (@car.Year)
+    </div>
+
+    @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <div class="alert alert-danger">@errorMessage</div>
+    }
+
+    @if (!string.IsNullOrEmpty(successMessage))
+    {
+        <div class="alert alert-success">@successMessage</div>
+    }
+
+    <div class="card mb-3">
+        <div class="card-header">Imagens cadastradas</div>
+        <div class="card-body">
+
+            @if (images.Count == 0)
+            {
+                <p>Nenhuma imagem cadastrada para este veículo.</p>
+            }
+            else
+            {
+                <div class="row g-3">
+                    @foreach (var img in images)
+                    {
+                        <div class="col-md-3 col-sm-4 col-6">
+                            <div class="card h-100">
+                                <img src="@img.Url" class="card-img-top" alt="Imagem do veículo" style="max-height: 120px; width: auto; object-fit: cover;" />
+                                <div class="card-body p-2 text-center">
+                                    <button class="btn btn-sm btn-outline-danger"
+                                            @onclick="() => DeleteImage(img)">
+                                        Excluir
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">Adicionar imagem</div>
+        <div class="card-body">
+            <EditForm Model="@newImage" OnValidSubmit="@SaveImage">
+                <DataAnnotationsValidator />
+                <ValidationSummary />
+
+                <div class="mb-3">
+                    <label class="form-label">URL da imagem</label>
+                    <InputText class="form-control"
+                               @bind-Value="newImage.Url" />
+                    <small class="text-muted">
+                    </small>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Salvar imagem</button>
+                <button type="button" class="btn btn-secondary ms-2" @onclick="CancelNewImage">
+                    Limpar
+                </button>
+            </EditForm>
+        </div>
+    </div>
+
+    <div class="mt-3">
+        <button class="btn btn-link" @onclick="BackToCars">
+            Voltar para lista de carros
+        </button>
+    </div>
+}
+
+@code {
+    [Parameter] public long CarId { get; set; }
+
+    private Car? car;
+    private List<CarImage> images = new();
+    private CarImage newImage = new();
+
+    private string? errorMessage;
+    private string? successMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        errorMessage = null;
+        successMessage = null;
+
+        car = await Db.Cars.FirstOrDefaultAsync(c => c.Id == CarId);
+
+        if (car != null)
+        {
+            images = await Db.CarImages
+                             .Where(i => i.CarId == CarId)
+                             .OrderBy(i => i.Id)
+                             .ToListAsync();
+
+            newImage = new CarImage
+            {
+                CarId = car.Id
+            };
+        }
+    }
+
+    private async Task SaveImage()
+    {
+        errorMessage = null;
+        successMessage = null;
+
+        try
+        {
+            if (car == null)
+                return;
+
+            if (string.IsNullOrWhiteSpace(newImage.Url))
+            {
+                errorMessage = "Informe a URL da imagem.";
+                return;
+            }
+
+            newImage.CarId = car.Id;
+
+            Db.CarImages.Add(newImage);
+            await Db.SaveChangesAsync();
+
+            images = await Db.CarImages
+                             .Where(i => i.CarId == car.Id)
+                             .OrderBy(i => i.Id)
+                             .ToListAsync();
+
+            successMessage = "Imagem cadastrada com sucesso.";
+            newImage = new CarImage { CarId = car.Id };
+        }
+        catch (Exception ex)
+        {
+            errorMessage = "Erro ao salvar imagem: " + ex.Message;
+            Console.WriteLine(ex);
+        }
+    }
+
+    private async Task DeleteImage(CarImage img)
+    {
+        errorMessage = null;
+        successMessage = null;
+
+        try
+        {
+            Db.CarImages.Remove(img);
+            await Db.SaveChangesAsync();
+
+            images = await Db.CarImages
+                             .Where(i => i.CarId == CarId)
+                             .OrderBy(i => i.Id)
+                             .ToListAsync();
+
+            successMessage = "Imagem excluída com sucesso.";
+        }
+        catch (Exception ex)
+        {
+            errorMessage = "Erro ao excluir imagem: " + ex.Message;
+            Console.WriteLine(ex);
+        }
+    }
+
+    private void CancelNewImage()
+    {
+        if (car != null)
+            newImage = new CarImage { CarId = car.Id };
+
+        errorMessage = null;
+        successMessage = null;
+    }
+
+    private void BackToCars()
+    {
+        Nav.NavigateTo("/cars");
+    }
+}

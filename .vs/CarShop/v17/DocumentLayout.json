@@ -1,0 +1,533 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\pages\\images.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:pages\\images.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\jwtauthenticationstateprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:jwtauthenticationstateprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\wwwroot\\js\\auth.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:wwwroot\\js\\auth.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\pages\\cars.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:pages\\cars.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\pages\\orders.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:pages\\orders.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\pages\\neworder.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:pages\\neworder.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\pages\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:pages\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\pages\\users.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:pages\\users.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\services\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:services\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\services\\salesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:services\\salesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\models\\vendorcomission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:models\\vendorcomission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\models\\carimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:models\\carimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|c:\\users\\rafaela\\downloads\\carshopmvcfull\\carshop\\carshop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F664521B-7FF8-9E19-3A23-F4A3E201C28C}|CarShop.csproj|solutionrelative:carshop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 26,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T14:11:06.812Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T17:17:47.52Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Pages\\Index.razor",
+              "RelativeToolTip": "Pages\\Index.razor",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-30T14:42:44.959Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Images.razor",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Pages\\Images.razor",
+              "RelativeDocumentMoniker": "Pages\\Images.razor",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Pages\\Images.razor",
+              "RelativeToolTip": "Pages\\Images.razor",
+              "ViewState": "AgIAAK8AAAAAAAAAAAAawJQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-30T19:14:51.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Shared\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Shared\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Shared\\NavMenu.razor",
+              "RelativeToolTip": "Shared\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-30T16:52:28.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\App.razor",
+              "RelativeDocumentMoniker": "App.razor",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\App.razor",
+              "RelativeToolTip": "App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-30T14:49:06.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "JwtAuthenticationStateProvider.cs",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\JwtAuthenticationStateProvider.cs",
+              "RelativeDocumentMoniker": "JwtAuthenticationStateProvider.cs",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\JwtAuthenticationStateProvider.cs",
+              "RelativeToolTip": "JwtAuthenticationStateProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T14:12:03.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Users.razor",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Pages\\Users.razor",
+              "RelativeDocumentMoniker": "Pages\\Users.razor",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Pages\\Users.razor",
+              "RelativeToolTip": "Pages\\Users.razor",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-30T17:30:14.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SalesService.cs",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Services\\SalesService.cs",
+              "RelativeDocumentMoniker": "Services\\SalesService.cs",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Services\\SalesService.cs",
+              "RelativeToolTip": "Services\\SalesService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T16:52:31.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T17:17:45.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NewOrder.razor",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Pages\\NewOrder.razor",
+              "RelativeDocumentMoniker": "Pages\\NewOrder.razor",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Pages\\NewOrder.razor",
+              "RelativeToolTip": "Pages\\NewOrder.razor",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAuwFUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-30T18:22:34.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Shared\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Shared\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Shared\\MainLayout.razor",
+              "RelativeToolTip": "Shared\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-30T14:01:42.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "Services\\TokenService.cs",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Services\\TokenService.cs",
+              "RelativeToolTip": "Services\\TokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T14:10:39.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SessionService.cs",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Services\\SessionService.cs",
+              "RelativeDocumentMoniker": "Services\\SessionService.cs",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Services\\SessionService.cs",
+              "RelativeToolTip": "Services\\SessionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T17:03:48.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Orders.razor",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Pages\\Orders.razor",
+              "RelativeDocumentMoniker": "Pages\\Orders.razor",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Pages\\Orders.razor",
+              "RelativeToolTip": "Pages\\Orders.razor",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-30T16:23:27.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Error.razor",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Pages\\Error.razor",
+              "RelativeDocumentMoniker": "Pages\\Error.razor",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Pages\\Error.razor",
+              "RelativeToolTip": "Pages\\Error.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-30T14:45:49.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Cars.razor",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Pages\\Cars.razor",
+              "RelativeDocumentMoniker": "Pages\\Cars.razor",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Pages\\Cars.razor",
+              "RelativeToolTip": "Pages\\Cars.razor",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAAAD4AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-30T18:22:16.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "_Host.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Pages\\_Host.cshtml",
+              "RelativeDocumentMoniker": "Pages\\_Host.cshtml",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Pages\\_Host.cshtml",
+              "RelativeToolTip": "Pages\\_Host.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-30T14:18:53.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "VendorComission.cs",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Models\\VendorComission.cs",
+              "RelativeDocumentMoniker": "Models\\VendorComission.cs",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Models\\VendorComission.cs",
+              "RelativeToolTip": "Models\\VendorComission.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T17:17:45.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "Models\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Models\\OrderItem.cs",
+              "RelativeToolTip": "Models\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T17:17:46.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CarImage.cs",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Models\\CarImage.cs",
+              "RelativeDocumentMoniker": "Models\\CarImage.cs",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Models\\CarImage.cs",
+              "RelativeToolTip": "Models\\CarImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T18:20:28.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T17:03:39.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.razor",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Pages\\Login.razor",
+              "RelativeDocumentMoniker": "Pages\\Login.razor",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Pages\\Login.razor",
+              "RelativeToolTip": "Pages\\Login.razor",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-30T14:13:14.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAgwC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T14:12:51.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "auth.js",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\wwwroot\\js\\auth.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\auth.js",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\wwwroot\\js\\auth.js",
+              "RelativeToolTip": "wwwroot\\js\\auth.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-30T17:19:51.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Pages\\_Imports.razor",
+              "RelativeDocumentMoniker": "Pages\\_Imports.razor",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Pages\\_Imports.razor",
+              "RelativeToolTip": "Pages\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-30T17:17:49.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\wwwroot\\css\\app.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\app.css",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\wwwroot\\css\\app.css",
+              "RelativeToolTip": "wwwroot\\css\\app.css",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-30T18:19:45.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Models\\Car.cs",
+              "RelativeDocumentMoniker": "Models\\Car.cs",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\Models\\Car.cs",
+              "RelativeToolTip": "Models\\Car.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T15:08:28.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-30T14:08:49.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CarShop",
+              "DocumentMoniker": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\CarShop.csproj",
+              "RelativeDocumentMoniker": "CarShop.csproj",
+              "ToolTip": "C:\\Users\\Rafaela\\Downloads\\CarShopMvcFull\\CarShop\\CarShop.csproj",
+              "RelativeToolTip": "CarShop.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-30T14:21:59.895Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
